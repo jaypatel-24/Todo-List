@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="ToDoList.css">
+	<title>To do list</title>
+</head>
+<body>
+
+	<div class="header">
+		To do list
+	</div>
+
+	<div class="container">
+		<input type="button" id="newCategoryForm" value="create new Category" onclick="newCategoryForm()">
+	</div>
+
+	<form class ="categoryForm" id="categoryForm">
+		<br>
+		<br>
+		<input type="text" id="categoryTitle" placeholder="Category Title">
+		<input type="button" id="createCategory" value="create">
+	</form>
+	<br><br>
+
+	<table id ="categoryTable">
+		<thead>
+			<tr>
+				<th>Category Name</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+
+		<tbody id="categoryData">	
+		</tbody>
+	</table>
+
+
+	<form class="todoForm" id="todoForm">
+		
+    	<input type="button" id="generate" value="select category">
+    	<div id="container"></div>
+
+		<input type="text" id="title" placeholder="title"><br>
+		<input type="date" id="date" placeholder="date">
+		<textarea id="description" placeholder="description"></textarea>
+		
+		<div class="prioritySelection">
+			Priority :  <br>
+			<input type="radio" name="priority" class="priority" id="high" value="high">high 
+			<input type="radio" name="priority" class="priority" id="medium" value="medium">medium 
+			<input type="radio" name="priority" class="priority" id="low" value="low">low 
+		</div>
+		
+		<input type="button" class="a1" id="createNewTodo" value="create">
+	</form>
+
+	<h1>Press category name to get todo list</h1>
+
+	<table id ="todoListTable">
+		<thead id="thead">
+			<tr>
+				<th>Todo_Title</th>
+				<th>due_Date</th>
+				<th>Description</th>
+				<th>priority</th>
+				<th>delete</th>
+			</tr>
+		</thead>
+
+		<tbody id="todoListData">	
+		</tbody>
+	</table>
+
+	<script src="ToDoList.js"></script>
+</body>
+</html>
