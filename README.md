@@ -1,5 +1,7 @@
 # Todo-List
 
+## Live Preview: https://jaypatel-24.github.io/Todo-List/
+
 Todo List is project in which you can create your Todos. In this project you can create any number of categories of your choice. To run the Todo project follow the instruction below:
 
 1. To create new category press "New Category" button.
